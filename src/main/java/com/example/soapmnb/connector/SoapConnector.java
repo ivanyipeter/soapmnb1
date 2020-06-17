@@ -1,11 +1,8 @@
 package com.example.soapmnb.connector;
 
-import com.example.soapmnb.model.GetCurrencyUnitsRequestBody;
-import com.example.soapmnb.model.GetCurrencyUnitsResponseBody;
 import com.example.soapmnb.model.GetCurrentExchangeRatesRequestBody;
 import com.example.soapmnb.model.GetCurrentExchangeRatesResponseBody;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
-import org.springframework.ws.soap.client.core.SoapActionCallback;
 
 public class SoapConnector extends WebServiceGatewaySupport {
 
