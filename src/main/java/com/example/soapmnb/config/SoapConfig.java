@@ -11,7 +11,7 @@ public class SoapConfig {
     @Bean
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        marshaller.setContextPath("com.example.soapmnb.model");
+        marshaller.setContextPath("hu.mnb.webservices");
         return marshaller;
     }
 
