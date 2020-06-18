@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: com.example.soapmnb.SoapmnbApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.212 s - in com.example.soapmnb.SoapmnbApplicationTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.921 s <<< FAILURE! - in com.example.soapmnb.SoapmnbApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+Caused by: org.springframework.oxm.MarshallingFailureException: 
+JAXB marshalling exception; nested exception is javax.xml.bind.MarshalException
+ - with linked exception:
+[com.sun.istack.SAXException2: unable to marshal type "hu.mnb.webservices.GetCurrenciesRequestBody" as an element because it is missing an @XmlRootElement annotation]
+Caused by: javax.xml.bind.MarshalException
+Caused by: com.sun.istack.SAXException2: unable to marshal type "hu.mnb.webservices.GetCurrenciesRequestBody" as an element because it is missing an @XmlRootElement annotation
+

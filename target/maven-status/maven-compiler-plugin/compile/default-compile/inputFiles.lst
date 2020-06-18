@@ -1,3 +1,4 @@
+G:\Workspace\AlpaCode\soapmnb\src\main\java\com\example\soapmnb\client\MnbClient.java
 G:\Workspace\AlpaCode\soapmnb\target\generated-sources\xjc\hu\mnb\webservices\GetDateIntervalResponseBody.java
 G:\Workspace\AlpaCode\soapmnb\target\generated-sources\xjc\hu\mnb\webservices\GetCurrencyUnitsResponseBody.java
 G:\Workspace\AlpaCode\soapmnb\target\generated-sources\xjc\hu\mnb\webservices\GetCurrentExchangeRatesResponseBody.java
@@ -7,7 +8,6 @@ G:\Workspace\AlpaCode\soapmnb\src\main\java\com\example\soapmnb\SoapmnbApplicati
 G:\Workspace\AlpaCode\soapmnb\target\generated-sources\xjc\hu\mnb\webservices\GetCurrentExchangeRatesRequestBody.java
 G:\Workspace\AlpaCode\soapmnb\target\generated-sources\xjc\hu\mnb\webservices\GetInfoRequestBody.java
 G:\Workspace\AlpaCode\soapmnb\target\generated-sources\xjc\hu\mnb\webservices\package-info.java
-G:\Workspace\AlpaCode\soapmnb\src\main\java\com\example\soapmnb\connector\SoapConnector.java
 G:\Workspace\AlpaCode\soapmnb\target\generated-sources\xjc\com\microsoft\schemas\_2003\_10\serialization\ObjectFactory.java
 G:\Workspace\AlpaCode\soapmnb\target\generated-sources\xjc\hu\mnb\webservices\GetExchangeRatesResponseBody.java
 G:\Workspace\AlpaCode\soapmnb\src\main\java\com\example\soapmnb\ServletInitializer.java

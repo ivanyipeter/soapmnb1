@@ -2,6 +2,7 @@ com\example\soapmnb\ServletInitializer.class
 hu\mnb\webservices\GetDateIntervalResponseBody.class
 hu\mnb\webservices\GetInfoRequestBody.class
 hu\mnb\webservices\GetInfoResponseBody.class
+com\example\soapmnb\client\MnbClient.class
 hu\mnb\webservices\GetDateIntervalRequestBody.class
 hu\mnb\webservices\GetExchangeRatesRequestBody.class
 com\example\soapmnb\config\SoapConfig.class

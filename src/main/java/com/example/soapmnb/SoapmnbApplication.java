@@ -23,6 +23,5 @@ public class SoapmnbApplication {
             GetCurrenciesResponseBody response = mnbClient.getCurrencies();
             System.out.println(response.getGetCurrenciesResult());
         };
-
     }
 }

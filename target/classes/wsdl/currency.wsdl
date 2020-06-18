@@ -1,6 +1,9 @@
-<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.mnb.hu/webservices/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="MNBArfolyamServiceSoapImpl" targetNamespace="http://www.mnb.hu/webservices/">
+<wsdl:definitions name="MNBArfolyamServiceSoapImpl" targetNamespace="http://www.mnb.hu/webservices/"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.mnb.hu/webservices/"
+                  xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl">
     <wsdl:types>
-        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
             <xs:element name="anyType" nillable="true" type="xs:anyType"/>
             <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
             <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
@@ -41,7 +44,7 @@
             <xs:attribute name="Id" type="xs:ID"/>
             <xs:attribute name="Ref" type="xs:IDREF"/>
         </xs:schema>
-        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.mnb.hu/webservices/">
+        <xs:schema elementFormDefault="qualified" targetNamespace="http://www.mnb.hu/webservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
             <xs:complexType name="GetCurrenciesRequestBody">
                 <xs:sequence/>
             </xs:complexType>
@@ -52,7 +55,7 @@
                     <xs:element minOccurs="0" name="GetCurrenciesResult" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
@@ -65,7 +68,7 @@
                     <xs:element minOccurs="0" name="currencyNames" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
@@ -78,7 +81,7 @@
                     <xs:element minOccurs="0" name="GetCurrencyUnitsResult" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
@@ -96,7 +99,7 @@
                     <xs:element minOccurs="0" name="GetCurrentExchangeRatesResult" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
@@ -114,7 +117,7 @@
                     <xs:element minOccurs="0" name="GetDateIntervalResult" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
@@ -127,21 +130,21 @@
                     <xs:element minOccurs="0" name="startDate" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
                     <xs:element minOccurs="0" name="endDate" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
                     <xs:element minOccurs="0" name="currencyNames" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
@@ -154,7 +157,7 @@
                     <xs:element minOccurs="0" name="GetExchangeRatesResult" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
@@ -172,7 +175,7 @@
                     <xs:element minOccurs="0" name="GetInfoResult" nillable="true" type="xs:string">
                         <xs:annotation>
                             <xs:appinfo>
-                                <DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/" EmitDefaultValue="false"/>
+                                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/"/>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
@@ -189,7 +192,7 @@
         <wsdl:part name="GetCurrenciesResponse" element="tns:GetCurrenciesResponse"/>
     </wsdl:message>
     <wsdl:message name="MNBArfolyamServiceSoap_GetCurrencies_StringFault_FaultMessage">
-        <wsdl:part xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q1:string"/>
+        <wsdl:part name="detail" element="q1:string" xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/"/>
     </wsdl:message>
     <wsdl:message name="GetCurrencyUnitsRequest">
         <wsdl:part name="GetCurrencyUnits" element="tns:GetCurrencyUnits"/>
@@ -198,7 +201,7 @@
         <wsdl:part name="GetCurrencyUnitsResponse" element="tns:GetCurrencyUnitsResponse"/>
     </wsdl:message>
     <wsdl:message name="MNBArfolyamServiceSoap_GetCurrencyUnits_StringFault_FaultMessage">
-        <wsdl:part xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q2:string"/>
+        <wsdl:part name="detail" element="q2:string" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/"/>
     </wsdl:message>
     <wsdl:message name="GetCurrentExchangeRatesRequest">
         <wsdl:part name="GetCurrentExchangeRates" element="tns:GetCurrentExchangeRates"/>
@@ -207,7 +210,7 @@
         <wsdl:part name="GetCurrentExchangeRatesResponse" element="tns:GetCurrentExchangeRatesResponse"/>
     </wsdl:message>
     <wsdl:message name="MNBArfolyamServiceSoap_GetCurrentExchangeRates_StringFault_FaultMessage">
-        <wsdl:part xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q3:string"/>
+        <wsdl:part name="detail" element="q3:string" xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/"/>
     </wsdl:message>
     <wsdl:message name="GetDateIntervalRequest">
         <wsdl:part name="GetDateInterval" element="tns:GetDateInterval"/>
@@ -216,7 +219,7 @@
         <wsdl:part name="GetDateIntervalResponse" element="tns:GetDateIntervalResponse"/>
     </wsdl:message>
     <wsdl:message name="MNBArfolyamServiceSoap_GetDateInterval_StringFault_FaultMessage">
-        <wsdl:part xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q4:string"/>
+        <wsdl:part name="detail" element="q4:string" xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/"/>
     </wsdl:message>
     <wsdl:message name="GetExchangeRatesRequest">
         <wsdl:part name="GetExchangeRates" element="tns:GetExchangeRates"/>
@@ -225,7 +228,7 @@
         <wsdl:part name="GetExchangeRatesResponse" element="tns:GetExchangeRatesResponse"/>
     </wsdl:message>
     <wsdl:message name="MNBArfolyamServiceSoap_GetExchangeRates_StringFault_FaultMessage">
-        <wsdl:part xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q5:string"/>
+        <wsdl:part name="detail" element="q5:string" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/"/>
     </wsdl:message>
     <wsdl:message name="GetInfoRequest">
         <wsdl:part name="GetInfo" element="tns:GetInfo"/>
@@ -234,7 +237,7 @@
         <wsdl:part name="GetInfoResponse" element="tns:GetInfoResponse"/>
     </wsdl:message>
     <wsdl:message name="MNBArfolyamServiceSoap_GetInfo_StringFault_FaultMessage">
-        <wsdl:part xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/" name="detail" element="q6:string"/>
+        <wsdl:part name="detail" element="q6:string" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/"/>
     </wsdl:message>
     <wsdl:portType name="MNBArfolyamServiceSoap">
         <wsdl:operation name="GetCurrencies">

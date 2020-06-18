@@ -2,7 +2,6 @@ package com.example.soapmnb.client;
 
 import hu.mnb.webservices.GetCurrenciesRequestBody;
 import hu.mnb.webservices.GetCurrenciesResponseBody;
-import hu.mnb.webservices.GetCurrencyUnitsResponseBody;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
 public class MnbClient extends WebServiceGatewaySupport {
@@ -17,5 +16,4 @@ public class MnbClient extends WebServiceGatewaySupport {
         return response;
     }
 
-
-}
+ }
