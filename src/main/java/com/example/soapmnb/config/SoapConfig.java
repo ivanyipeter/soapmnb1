@@ -1,6 +1,6 @@
 package com.example.soapmnb.config;
 
-import com.example.soapmnb.connector.SoapConnector;
+import com.example.soapmnb.client.MnbClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
@@ -16,9 +16,9 @@ public class SoapConfig {
     }
 
     @Bean
-    public SoapConnector soapConnector(Jaxb2Marshaller marshaller) {
-        SoapConnector client = new SoapConnector();
-        client.setDefaultUri("");
+    public MnbClient soapConnector(Jaxb2Marshaller marshaller) {
+        MnbClient client = new MnbClient();
+        client.setDefaultUri("http://www.mnb.hu/arfolyamok.asmx?singleWsdl");
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);
         return client;
